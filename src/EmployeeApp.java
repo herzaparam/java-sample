@@ -17,6 +17,7 @@ public class EmployeeApp {
         if (employee instanceof VicePresident) {
             VicePresident vicePresident = (VicePresident) employee;
             System.out.println("Hello vp " + vicePresident);
+            System.out.println("Hello vp " + vicePresident);
         } else if (employee instanceof Manager) {
             Manager manager = (Manager) employee;
             System.out.println("Hello manager " + manager.name);
