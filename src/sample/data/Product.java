@@ -8,4 +8,18 @@ public class Product {
         this.name = name;
         this.price = price;
     }
+    public String toString(){
+        return "Product name: " + name +  ", price: " + price;
+    }
+
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Product product = (Product) o;
+
+        if (price != product.price) return false;
+        return name != null ? name.equals(product.name) : product.name == null;
+    }
+
 }
